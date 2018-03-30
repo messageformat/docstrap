@@ -2,6 +2,7 @@
 var data = obj;
 var self = this;
 ?>
+<?js if (!data.hideconstructor) { ?>
 <hr>
 <dt>
     <h4 class="name" id="<?js= id ?>"><?js= data.attribs + (kind === 'class' ? 'new ' : '') + name + (kind !== 'event' ? data.signature : '') ?></h4>
@@ -10,9 +11,10 @@ var self = this;
     <p class="summary"><?js= summary ?></p>
     <?js } ?>
 </dt>
+<?js } ?>
 <dd>
 
-    <?js if (data && data.description) { ?>
+    <?js if (data && data.description && !data.hideconstructor) { ?>
     <div class="description">
         <?js= data.description ?>
     </div>
