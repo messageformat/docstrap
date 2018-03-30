@@ -14,7 +14,7 @@
     "footer": "",
     "copyright": "DocStrap Copyright © 2012-2015 The contributors to the JSDoc3 and DocStrap projects.",
     "navType": "vertical",
-    "theme": "cosmo",
+    "theme": "flatly",
     "linenums": true,
     "collapseSymbols": false,
     "inverseNav": true,
