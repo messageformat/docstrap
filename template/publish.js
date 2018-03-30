@@ -34,6 +34,7 @@ var indexUrl = helper.getUniqueFilename('index');
 var navOptions = {
   includeDate: conf.includeDate !== false,
   logoFile: conf.logoFile,
+  favicon: Array.isArray(conf.favicon) ? conf.favicon.join("\n") : conf.favicon || "",
   systemName: conf.systemName || "Documentation",
   navType: conf.navType || "vertical",
   footer: conf.footer || "",
