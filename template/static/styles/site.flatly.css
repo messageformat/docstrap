@@ -7017,6 +7017,25 @@ img.branding-logo {
   padding: 0px;
   margin: -3px 8px 0 0;
 }
+.main-title {
+  padding: 21px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-title h1 {
+  display: inline-block;
+  font-size: 40px;
+}
+.main-title img {
+  display: inline-block;
+  float: none;
+  width: 200px;
+  height: 200px;
+  margin: 21px;
+}
+.main-title .badge {
+  display: none;
+}
 #toc {
   position: fixed;
   top: 62px;
@@ -7058,7 +7077,6 @@ img.branding-logo {
 }
 .page-title {
   font-size: 220%;
-  font-weight: 700;
   padding-top: 21px;
   padding-bottom: 7px;
   display: block;
@@ -7132,34 +7150,6 @@ code {
 }
 .dropdown-menu {
   overflow-y: auto;
-  max-height: 150px;
-}
-@media (min-height: 300px) {
-  .dropdown-menu {
-    max-height: 238px;
-  }
-}
-@media (min-height: 400px) {
-  .dropdown-menu {
-    max-height: 338px;
-  }
-}
-@media (min-height: 500px) {
-  .dropdown-menu {
-    max-height: 438px;
-  }
-}
-@media (min-height: 600px) {
-  .dropdown-menu {
-    max-height: 538px;
-  }
-}
-@media (min-height: 700px) {
-  .dropdown-menu {
-    max-height: 638px;
-  }
-}
-.dropdown-menu {
   max-height: calc(100vh - 62px);
 }
 @media (max-width: 768px) {

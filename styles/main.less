@@ -31,6 +31,24 @@ img.branding-logo {
   margin: -3px 8px 0 0;
 }
 
+.main-title {
+  padding: 21px 0;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    display: inline-block;
+    font-size: 40px;
+  }
+  img {
+    display: inline-block;
+    float: none;
+    width: 200px;
+    height: 200px;
+    margin: 21px;
+  }
+  .badge { display: none; }
+}
+
 #toc {
   position   : fixed;
   top        : @headerHeight;
@@ -80,7 +98,6 @@ img.branding-logo {
 
 .page-title {
   font-size      : 220%;
-  font-weight    : 700;
   padding-top    : 21px;
   padding-bottom : 7px;
   display        : block;
@@ -164,42 +181,6 @@ code {
 
 .dropdown-menu {
   overflow-y: auto;
-  max-height: 150px; // when very small height, big width
-}
-
-// media queries for browsers not supporting calc and vh. probably not necessary
-@media (min-height: 300px) {
-  .dropdown-menu {
-    max-height: 300px - @headerHeight;
-  }
-}
-
-@media (min-height: 400px) {
-  .dropdown-menu {
-    max-height: 400px - @headerHeight;
-  }
-}
-
-@media (min-height: 500px) {
-  .dropdown-menu {
-    max-height: 500px - @headerHeight;
-  }
-}
-
-@media (min-height: 600px) {
-  .dropdown-menu {
-    max-height: 600px - @headerHeight;
-  }
-}
-
-@media (min-height: 700px) {
-  .dropdown-menu {
-    max-height: 700px - @headerHeight;
-  }
-}
-
-// using calc and vh to get accurate value
-.dropdown-menu {
   max-height: ~"calc(100vh - @{headerHeight})";
 }
 
