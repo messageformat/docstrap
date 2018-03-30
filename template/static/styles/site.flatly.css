@@ -7004,6 +7004,19 @@ h6,
 .h6 {
   font-weight: 700;
 }
+.page-title {
+  font-size: 220%;
+  padding-top: 21px;
+  padding-bottom: 7px;
+  display: block;
+}
+h2,
+.subsection-title {
+  margin-top: 60px;
+}
+article > dl > dd {
+  margin-bottom: 42px;
+}
 #main {
   margin-top: 62px;
 }
@@ -7011,11 +7024,14 @@ h6,
   padding-left: 20px;
   padding-right: 20px;
 }
+.navbar-brand {
+  margin-top: -3px;
+}
 img.branding-logo {
   height: 30px;
   display: inline-block;
   padding: 0px;
-  margin: -3px 8px 0 0;
+  margin: 0 8px 0 0;
 }
 .main-title {
   padding: 21px 0;
@@ -7074,18 +7090,6 @@ img.branding-logo {
   color: #18BC9C;
   width: 100%;
   display: block;
-}
-.page-title {
-  font-size: 220%;
-  padding-top: 21px;
-  padding-bottom: 7px;
-  display: block;
-}
-.subsection-title {
-  margin-top: 60px;
-}
-article > dl > dd {
-  margin-bottom: 42px;
 }
 footer {
   border-top: 1px solid transparent;
@@ -7147,6 +7151,12 @@ code {
 }
 .sunlight-menu {
   display: none;
+}
+.panel-body > .sunlight-container {
+  margin: 0 !important;
+}
+.panel-body > .sunlight-container pre {
+  padding: 0;
 }
 .dropdown-menu {
   overflow-y: auto;

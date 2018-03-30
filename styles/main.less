@@ -13,6 +13,21 @@ h4, h5, h6, .h4, .h5, .h6 {
   font-weight: 700;
 }
 
+.page-title {
+  font-size      : 220%;
+  padding-top    : 21px;
+  padding-bottom : 7px;
+  display        : block;
+}
+
+h2, .subsection-title {
+  margin-top: 60px;
+}
+
+article > dl > dd {
+  margin-bottom: 42px;
+}
+
 #main {
   margin-top : @headerHeight;
 }
@@ -24,11 +39,15 @@ h4, h5, h6, .h4, .h5, .h6 {
   }
 }
 
+.navbar-brand {
+  margin-top: -3px;
+}
+
 img.branding-logo {
   height: 30px;
   display: inline-block;
   padding: 0px;
-  margin: -3px 8px 0 0;
+  margin: 0 8px 0 0;
 }
 
 .main-title {
@@ -94,21 +113,6 @@ img.branding-logo {
   color      : @navbar-inverse-bg;
   width      : 100%;
   display    : block;
-}
-
-.page-title {
-  font-size      : 220%;
-  padding-top    : 21px;
-  padding-bottom : 7px;
-  display        : block;
-}
-
-.subsection-title {
-  margin-top: 60px;
-}
-
-article > dl > dd {
-  margin-bottom: 42px;
 }
 
 footer {
@@ -177,6 +181,11 @@ code {
 
 .sunlight-menu {
   display: none;
+}
+
+.panel-body > .sunlight-container {
+  margin: 0 !important;
+  pre { padding: 0; }
 }
 
 .dropdown-menu {
