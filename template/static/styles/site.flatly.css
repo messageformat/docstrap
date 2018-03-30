@@ -7012,10 +7012,10 @@ h6,
   padding-right: 20px;
 }
 img.branding-logo {
-  max-height: 30px;
+  height: 30px;
   display: inline-block;
   padding: 0px;
-  margin: -3px 5px 0 0;
+  margin: -3px 8px 0 0;
 }
 #toc {
   position: fixed;
@@ -7058,9 +7058,8 @@ img.branding-logo {
 }
 .page-title {
   font-size: 220%;
-  color: #18BC9C;
   font-weight: 700;
-  padding-top: 10px;
+  padding-top: 21px;
   padding-bottom: 7px;
   display: block;
 }

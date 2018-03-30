@@ -30,14 +30,20 @@
 	</div>
 	<div class="navbar-collapse collapse" id="topNavigation">
 		<ul class="nav navbar-nav">
-			<?js this.nav.topLevelNav.forEach(function(entry){ ?>
+			<?js this.nav.topLevelNav.forEach(function(entry){ if(entry.title === 'Tutorials') { ?>
+				<?js entry.members.forEach(function(member){ ?>
+					<li class="nav-item">
+						<?js= member.replace('<a', '<a class="nav-link"') ?>
+					</li>
+				<?js }); ?>
+			<?js } else { ?>
 			<li class="dropdown">
 				<a href="<?js= entry.link ?>" class="dropdown-toggle" data-toggle="dropdown"><?js= entry.title ?><b class="caret"></b></a>
 				<ul class="dropdown-menu <?js= that.navOptions.navType ==='inline' ? 'inline' : '' ?>">
 					<?js entry.members.forEach(function(member){ ?><li><?js= member ?></li><?js	}); ?>
 				</ul>
 			</li>
-			<?js }); ?>
+			<?js }}); ?>
 		</ul>
         <?js if (this.navOptions.search) { ?>
             <div class="col-sm-3 col-md-3">
