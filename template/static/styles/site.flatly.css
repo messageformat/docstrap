@@ -7064,6 +7064,12 @@ img.branding-logo {
   padding-bottom: 7px;
   display: block;
 }
+.subsection-title {
+  margin-top: 60px;
+}
+article > dl > dd {
+  margin-bottom: 42px;
+}
 footer {
   border-top: 1px solid transparent;
   padding-top: 15px;
@@ -7121,6 +7127,9 @@ code {
   font-size: 12px;
   line-height: 15px;
   padding: 10px 4px !important;
+}
+.sunlight-menu {
+  display: none;
 }
 .dropdown-menu {
   overflow-y: auto;
