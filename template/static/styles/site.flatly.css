@@ -7017,6 +7017,9 @@ h2,
 article > dl > dd {
   margin-bottom: 42px;
 }
+blockquote {
+  font-size: inherit;
+}
 #main {
   margin-top: 62px;
 }
