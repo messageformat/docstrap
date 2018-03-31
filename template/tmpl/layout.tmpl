@@ -60,6 +60,9 @@
         <?js } ?>
         <?js if (this.navOptions.github) { ?>
           <ul class="nav navbar-nav navbar-right">
+            <?js if (this.navOptions.systemVersion) { ?>
+              <li><a href="https://github.com/<?js= this.navOptions.github ?>/releases"><?js= this.navOptions.systemVersion ?></a></li>
+            <?js } ?>
             <li class="navbar-github-icon"><a href="https://github.com/<?js= this.navOptions.github ?>">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title><?js= this.navOptions.systemName ?> on GitHub</title>

@@ -582,6 +582,7 @@ exports.publish = function(taffyData, opts, tutorials) {
   var packageInfo = (find({
     kind: 'package'
   }) || [])[0];
+  if (packageInfo && packageInfo.version) navOptions.systemVersion = packageInfo.version;
   if (navOptions.disablePackagePath !== true && packageInfo && packageInfo.name) {
     if (packageInfo.version) {
       outdir = path.join(outdir, packageInfo.name, packageInfo.version);
