@@ -470,17 +470,17 @@ function buildNav(members) {
     }
   }
 
-  var topLevelNav = [];
-  _.each(nav, function(entry, name) {
-    if (entry.members.length > 0 && name !== "index") {
-      topLevelNav.push({
-        title: entry.title,
-        link: entry.link,
-        members: entry.members
-      });
+  const api = {
+    title: 'API',
+    link: nav.class.link,
+    members: []
+  };
+  for (const [name, entry] of Object.entries(nav)) {
+    if (name !== 'index' && name !== 'tutorial') {
+      for (const member of entry.members) api.members.push(member);
     }
-  });
-  nav.topLevelNav = topLevelNav;
+  }
+  nav.topLevelNav = [api, nav.tutorial];
 }
 
 /**
